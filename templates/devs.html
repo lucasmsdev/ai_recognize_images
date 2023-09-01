@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos desenvolvedores</title>
+    <style>
+        /* Estilos CSS para o body para centralizar os cards e definir o fundo escuro */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Fundo mais escuro */
+            color: #fff; /* Cor do texto */
+        }
+
+        /* Estilos CSS para o título */
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        /* Estilos CSS para os cards */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+            background-color: #fff; /* Fundo branco dos cards */
+            color: #333; /* Cor do texto nos cards */
+            transition: transform 0.3s ease-in-out; /* Animação de deslizamento suave */
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        /* Estilos para o verso do card (LinkedIn) */
+        .card-back {
+            display: none; /* Inicialmente oculto */
+            padding: 20px;
+        }
+     
+        /* Animação de deslizamento */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Desenvolvedores</h1> <!-- Título centralizado no topo -->
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="https://www.linkedin.com/in/lucas10/"><img src="static/lucas.jpg" alt="Imagem 1"></a>
+            
+            <div class="card-back">
+            </div>
+            <h2>Lucas Machado</h2>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="https://www.linkedin.com/in/bruno-ribeiro-8503a8247"><img src="static/bruno.jpg" alt="Imagem 1"></a>
+            <div class="card-back">
+                <i class="fab fa-linkedin linkedin-icon"></i>
+            </div>
+            <h2>Bruno Lica</h2>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="https://www.linkedin.com/in/al%C3%A9xis-cordeiro-327377197"><img src="static/alexis.jpg" alt="Imagem 1"></a>
+            <div class="card-back">
+                <i class="fab fa-linkedin linkedin-icon"></i>
+            </div>
+            <h2>Aléxis Cordeiro</h2>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <a href="https://www.linkedin.com/in/jos%C3%A9-thiago-259a53257/"><img src="static/josethiago.jpg" alt="Imagem 1"></a>
+            <div class="card-back">
+                <i class="fab fa-linkedin linkedin-icon"></i>
+            </div>
+            <h2>José Thiago</h2>
+        </div>
+    </div>
+</body>
+</html>

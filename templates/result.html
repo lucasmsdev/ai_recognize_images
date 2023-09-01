@@ -1,0 +1,26 @@
+<!-- result.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <a href="/devs" class="developers-link">Desenvolvedores</a> <!-- Link para /devs -->
+    <a href="/" class="voltarhaha">Voltar</a>
+    <h1>Resultado da Análise</h1>
+    <ul class="results">
+        {% for _, label, score in predictions %}
+            <li>
+                <strong>{{ label|upper }}</strong> 
+                (Assertividade: 
+                <span class="Assertividade {% if score > 0.7 %}AltaAssertividade{% else %}BaixaAssertividade{% endif %}">
+                    {{ (score * 100)|round(2) }}%
+                    {% if score > 0.7 %}<span>&#9650;</span>{% else %}<span>&#9660;</span>{% endif %}
+                </span>)
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

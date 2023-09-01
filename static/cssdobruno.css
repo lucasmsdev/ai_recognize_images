@@ -1,0 +1,42 @@
+/* upload.css */
+
+.upload-button {
+    /* Estilos do botão de upload... */
+}
+
+.upload-input {
+    display: none;
+}
+
+/* Estilizando o botão "Escolher arquivo" */
+.custom-file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-file-input:hover {
+    background-color: #2980b9;
+}
+
+/* Estilizando a label do botão "Escolher arquivo" */
+.custom-file-label {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-file-label:hover {
+    background-color: #2980b9;
+}
+

@@ -1,0 +1,17 @@
+<!-- upload.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carregar Imagem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <a href="/devs" class="developers-link">Desenvolvedores</a>
+    <h1>Carregar Imagem</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" class="upload-button">
+        <button type="submit" class="upload-button">Carregar</button>
+    </form>
+</body>
+</html>
